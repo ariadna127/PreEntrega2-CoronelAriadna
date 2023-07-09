@@ -93,25 +93,16 @@ header{
     margin-top: .9375rem;
 }
 .cat-linea{
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
     width: 100%;
-    align-items: center;
-    
 }
 .cat-linea div{
-    width: 90%;
     border-top: .0625rem solid grey;
-    margin-top: .9375rem;  
+    margin-top: .9375rem;
 }
 .cat-linea h2{
-    width: 40%;
     text-align: center;
-}
-.a{
-    margin-right: 1.25rem;
-}
-.b{
-    margin-left: 1.25rem;
 }
 /*main de INICIO*/
 .section-1{
@@ -251,6 +242,7 @@ header{
 }
 .form-talle div input{
     appearance: none;
+    -webkit-appearance: none;
     width: 1.25rem;
     height: 1.25rem;
     border: .0625rem solid black;
@@ -284,6 +276,21 @@ header{
     height: 1.875rem;
     border: .0625rem solid grey;
     border-radius: 10%;
+}
+.button-submit{
+    border: 2px solid rgb(76, 75, 75);
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    position: relative;
+    top: 2rem;
+    right: .625rem;
+}
+.button-submit::before{
+    content: url("../asset/img/proximo.png");
+    position: absolute;
+    top: 0;
+    left: .0625rem;
 }
 .productos{
     display: grid;

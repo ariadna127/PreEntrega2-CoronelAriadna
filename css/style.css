@@ -20,69 +20,63 @@ body{
 header{
     background-color: black;
     color: white;
-    width: 100%;
-    height: 10rem;
     position: sticky;
-    top: 0;
     z-index: 1;
+    top: 0;
 }
 .header-div{
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: end;
     height: 6.25rem;
-    border-bottom: .0625rem solid #d9d9d9;
+    border-bottom: .0625rem solid white;
+    padding: 0 .625rem;
 }
-.search form input{
-    background-color: black;
-    width: 16.875rem;
-    height: 2.5rem;
-    margin: .9375rem 0rem 0rem .625rem;
-    padding-left: .625rem;
-    border: .0625rem solid #d9d9d9;
-    border-radius: .3125rem;
-    font-family: 'abz';
-    font-size: .9375rem;
+.header-div h1{
+    font-family: 'venecia-font';
+    font-weight: lighter;
+    font-size: 4rem;
+    width: 16.25rem;
+    text-align: center;
 }
 .search{
     position: relative;
-    margin-bottom: .625rem;
+    padding-bottom: .625rem;
+}
+.search form input{
+    width: 16.25rem;
+    height: 2.5rem;
+    border: 1px solid white;
+    background-color: black;
+    color: grey;
+    font-family: 'venecia-font';
+    font-size: 1rem;
+    padding: .625rem;
+    border-radius: .3125rem;
 }
 .search img{
     position: absolute;
-    top: 1.375rem;
-    left: 15.625rem;
+    top: .8125rem;
+    left: 15rem;
 }
-
-.header-div img{
-    width: 1.5625rem;
-    height: 1.5625rem;
+.usuario-carrito{
+    width: 16.25rem;
+    text-align: end;
+    padding-bottom: .625rem;
 }
-
-.header-div h1{
-    font-family: 'venecia-font';
-    font-size: 4rem;
-    font-weight: lighter;
-    transform: translate(-50%);
-}
-
-.header-nav ul {
+.header-nav ul{
+    list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: .9375rem;
-    list-style: none;
+    gap: 1.875rem;
     height: 3.75rem;
 }
 .header-nav ul li a{
     text-decoration: none;
     color: white;
-    margin: .625rem;
 }
-.header-div .img{
-    margin-bottom: .3125rem;
-    margin-right: .625rem;
-}
+/*main*/
 .container{
     display: flex;
     flex-direction: column;
@@ -508,4 +502,19 @@ footer div img{
     width: 1.5625rem;
     height: 1.5625rem;
     margin-right: 10px;
+}
+
+@media (max-width: 768px){
+    h1{
+        transform: translate(50%);
+    }
+    .search form input{
+        width: 13.4375rem;
+        height: 2.25rem;
+    }
+    .search img{
+        left: 12.5rem;
+        width: 20px;
+        height: 1.25rem;
+    }
 }

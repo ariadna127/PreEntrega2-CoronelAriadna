@@ -42,6 +42,7 @@ header{
 .search{
     position: relative;
     padding-bottom: .625rem;
+    width: 16.25rem;
 }
 .search form input{
     width: 16.25rem;
@@ -105,18 +106,18 @@ header{
     background-position: center;
     width: 100%;
     height: 30rem;
-    position: relative;
+    display: flex;
+    align-items: center;
 }
 
-.section-1 .img{
+.img-portada{
     display: flex;
     justify-content:center;
     align-items: center;
-    height: 30rem;
     gap: 3.75rem;
     margin-left: 1.25rem;
 }
-.section-1 .img img{
+.img-portada img{
     width: 15.625rem;
     height: 21.875rem;
 }
@@ -128,8 +129,6 @@ header{
     opacity: 0.78;
     text-align: center;
     width: 15rem;
-    position: absolute;
-    top: 8.125rem;
 }
 .section-2{
     display: flex;
@@ -236,11 +235,13 @@ header{
 }
 .form-talle div input{
     appearance: none;
-    -webkit-appearance: none;
     width: 1.25rem;
     height: 1.25rem;
     border: .0625rem solid black;
     border-radius: 20%;
+}
+.form-talle div input:focus{
+    background-color: black;
 }
 .form-talle div label{
     opacity: 0.8;
@@ -504,17 +505,45 @@ footer div img{
     margin-right: 10px;
 }
 
+/*MEDIA QUERIES*/
 @media (max-width: 768px){
-    h1{
-        transform: translate(50%);
-    }
     .search form input{
-        width: 13.4375rem;
+        width: 12.5rem;
         height: 2.25rem;
     }
     .search img{
-        left: 12.5rem;
-        width: 20px;
-        height: 1.25rem;
+        left: 11.25rem;
+    }
+    .img-portada{
+        align-items: end;
+        margin-left: 0;
+    }
+    .img-portada img{
+        width: 10.625rem;
+        height: 15.625rem;
+    }
+    .section-1{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.875rem;
+    }
+    .section-1 br{
+        display: none;
+    }
+    .section-1 h2{
+        font-size: 2.25rem;
+        text-align: center;
+        width: 21.25rem;
+        margin-top: 1.875rem;
+    }
+    .section-2{
+        height: 23.4375rem;
+    }
+    .ropa{
+        width: 14.0625rem;
+        height: 16.875rem;
+    }
+    .footer-div h3{
+        font-size: 1rem;
     }
 }

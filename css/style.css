@@ -196,6 +196,9 @@ header{
     border-color: black;
     border-radius: .3125rem;
 }
+.filtrar-prod{
+    display: none;
+}
 .section-productos{
     display: grid;
     grid-template-columns: 20% 80%;
@@ -528,6 +531,18 @@ footer div img{
     }
 
 }
+@media (max-width: 1182px){
+    /*main de PRODUCTOS*/
+    .productos{
+        column-gap: 0;
+    }
+    .cards{
+        width: 14.375rem;
+    }
+    .cards img{
+        height: 21.875rem;
+    }
+}
 @media (max-width: 1024px){
     /*main de INICIO*/
     .img-portada img{
@@ -537,6 +552,32 @@ footer div img{
     .ropa{
         width: 18.125rem;
         height: 18.125rem;
+    }
+    /*main de PRODUCTOS*/
+    .section-productos{
+        margin-left: 1.5625rem;
+    }
+    .productos{
+        grid-template-columns: repeat(3, 13.75rem);
+        grid-template-rows: repeat(3, 23.125rem);
+        column-gap: 4%;
+    }
+    .cards{
+        width: 13.75rem;
+    }
+    .cards img{
+        height: 21.25rem;
+    }
+}
+@media(max-width: 929px){
+    .productos{
+        column-gap: 0;
+    }
+    .cards{
+        width: 12.5rem;
+    }
+    .cards img{
+        height: 20rem;
     }
 }
 @media (max-width:878px){
@@ -570,6 +611,18 @@ footer div img{
         width: 15.875rem;
         height: 15.875rem;
     }
+    /*main de PRODUCTOS*/
+    .productos{
+        grid-template-columns: repeat(3, 11.25rem);
+        column-gap: 4.5%;
+        row-gap: 1.875rem;
+    }
+    .cards{
+        width: 11.25rem;
+    }
+    .cards img{
+        height: 18.125rem;
+    }
 }
 @media (max-width: 768px){
     /*HEADER*/
@@ -589,6 +642,28 @@ footer div img{
         width: 14.0625rem;
         height: 16.875rem;
     }
+    /*main PRODUCTOS*/
+    .productos{
+        grid-template-columns: repeat(2, 14.375rem);
+        grid-template-rows: repeat(4, 28.125rem);
+        justify-content: center;
+        padding-bottom: 3rem;
+    }
+    .cards{
+        width: 14.375rem;
+    }
+    .cards img{
+        height: 22.5rem;
+    }
+    .productos div:nth-child(9){
+        display: none;
+    }
+    .productos input{
+        grid-column: 1/3;
+        width: 14.375rem;
+        justify-self: center;
+    }
+    
     /*FOOTER*/
     .footer-div h3{
         font-size: 1rem;
@@ -703,6 +778,34 @@ footer div img{
     .sweaters{
         grid-area: sweaters;
     }
+    /*main PRODUCTOS*/
+    .ordenar-por p{
+        display: none;
+    }
+    .filtrar-prod{
+        display: block;
+    }
+    .fil-ord{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: .625rem;
+    }
+    .filtrar-prod select{
+        width: 6.5625rem;
+        height: 2.5rem;
+        font-family: 'abz';
+        font-size: 1rem;
+        border-color: black;
+        border-radius: .3125rem;
+    }
+    .section-productos{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: -0.0625rem;
+    }
+    .filtros{
+        display: none;
+    }
     /*FOOTER*/
     footer{
         flex-direction: column;
@@ -718,9 +821,30 @@ footer div img{
     .search img{
         left: 53%;
     }
+    /*main PRODUCTOS*/
+    .productos{
+        grid-template-columns: repeat(2, 11.25rem);
+        grid-template-rows: repeat(2, 18.75rem);
+    }
+    .cards{
+        width: 11.25rem;
+    }
+    .cards img{
+        height: 16.25rem;
+    }
+    .cards div p{
+        text-align: center;
+        font-size: .9375rem;
+    }
 }
 @media (max-width: 400px){
     /*HEADER*/
+    .search form input{
+        width: 100%;
+    }
+    .search img{
+        left: 85%;
+    }
     .header-div h1{
         font-size: 3.125rem;
         width: 13.125rem;
@@ -741,12 +865,7 @@ footer div img{
 
 @media (max-width: 375px){
     /*HEADER*/
-    .search form input{
-        width: 100%;
-    }
-    .search img{
-        left: 85%;
-    }
+    
     /*main de INICIO*/
     .section-2{
         display: flex;
@@ -762,9 +881,30 @@ footer div img{
     .ropa p{
         font-size: 1.875rem;
     }
+    /*main PRODUCTOS*/
+    .fil-ord{
+        flex-direction: column;
+    }
+    .filtrar-prod{
+        align-self: center;
+    }
+    .section-productos{
+        margin-top: 2.125rem;
+    }
+    .productos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards{
+        width: 15.625rem;
+    }
+    .cards img{
+        height: 23.125rem;
+    }
 }
 @media (max-width: 340px){
-    /*heaer*/
+    /*header*/
     .usuario-carrito{
         width: 2rem;
     }

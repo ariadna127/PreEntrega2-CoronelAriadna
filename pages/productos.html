@@ -47,19 +47,30 @@
                 <h2>PRODUCTOS</h2>
                 <div class="b"></div>
             </div>
-            <div class="ordenar-por">
-                <p>Ordernar por:</p>
-                <form action="">
+            <div class="fil-ord">
+                <div class="ordenar-por">
+                    <p>Ordernar por:</p>
+                    <form action="">
+                        <select>
+                            <option value="p:men-ma">Precio:Menor a mayor</option>
+                            <option value="p:ma-me">Precio:Mayor a menor</option>
+                            <option value="a-z">A-Z</option>
+                            <option value="z-a">Z-A</option>
+                            <option value="mas-nuev-viejo" selected>Más Nuevo al más Viejo</option>
+                            <option value="mas-viejo-nuev">Más Viejo al mas Nuevo</option>
+                            <option value="mas-vendidos">Más vendidos</option>
+                        </select>
+                    </form>
+                </div>
+                <form action="" class="filtrar-prod">
                     <select>
-                        <option value="p:men-ma">Precio:Menor a mayor</option>
-                        <option value="p:ma-me">Precio:Mayor a menor</option>
-                        <option value="a-z">A-Z</option>
-                        <option value="z-a">Z-A</option>
-                        <option value="mas-nuev-viejo" selected>Más Nuevo al más Viejo</option>
-                        <option value="mas-viejo-nuev">Más Viejo al mas Nuevo</option>
-                        <option value="mas-vendidos">Más vendidos</option>
+                        <option disabled="Filtrar" selected>Filtrar</option>
+                        <option value="p:men-ma">CATEGORÍAS</option>
+                        <option value="p:ma-me">TALLE</option>
+                        <option value="a-z">PRECIO</option>
                     </select>
                 </form>
+            </div>
             </div>
             
         </div>
